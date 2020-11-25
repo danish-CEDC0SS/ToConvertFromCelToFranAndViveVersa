@@ -1,0 +1,42 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault()">
+        <input type="text" id="inp1" placeholder="Input" style="display: inline-block;" >
+        <input type="text" id="inp2" placeholder="Result">
+         <select id="degree" name="degree">
+             <option value="Celcius">Celsius</option>
+             <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+        <input type="submit" onclick="fun1()" value="Convert">
+    </form>
+    <script>
+        function fun1(){
+            str=document.getElementById("inp1").value;
+            console.log(str,'str');
+            str=Number(str);
+            str1=document.getElementById("degree").value;
+            str2="";
+            if(str1=='Fahrenheit'){
+                str2=(str*(9/5)+32);
+                console.log(str2,'str2');
+                str=str+ ' C';
+                str2=str2+ ' F';
+            }
+            if(str1=='Celcius'){
+                str2=((str-32)*(5/9));
+                console.log(str2,'str22');
+                str=str+' F';
+                str2=str2+ ' C';
+            }
+            document.getElementById("inp1").value=str;
+            document.getElementById('inp2').value=str2;
+        }
+    </script>
+</body>
+</html>
