@@ -1,0 +1,27 @@
+.a1{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(149, 167, 245);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+.a2{
+    background-color: burlywood;
+    height: 100vh;
+    padding-top: 200px;
+}
+.a3{
+    border: 1px solid rgb(200,200,200);
+    background-color: rgb(247, 72, 72);
+    color: white;
+    box-shadow:3px 3px 5px grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.a4{
+    border: 1px solid rgb(200,200,200);
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgb(105, 136, 134), -2px -2px rgb(149, 167, 245);
+}
