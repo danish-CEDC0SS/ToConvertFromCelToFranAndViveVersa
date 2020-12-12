@@ -25,3 +25,14 @@
     border-radius: 5px;
     box-shadow: inset 2px 2px 5px rgb(105, 136, 134), -2px -2px rgb(149, 167, 245);
 }
+
+ /* for making input type only number */
+ input[type=number]::-webkit-inner-spin-button,
+ input[type=number]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+  /* for mozzila */
+ input[type=number] {
+     -moz-appearance: textfield;
+ } 
